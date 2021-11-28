@@ -82,15 +82,18 @@ list-style: none;
 
 
 /* Products Section Start here------ */
-.product-section{
+.main-section{
     background-color: white;
     max-width: 980px;
     margin: 40px auto 60px auto;
     border-radius: 5px;
 }
 
-.products-container{
+.main-container{
     padding: 30px;
+}
+
+.products-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px 30px;
@@ -113,7 +116,8 @@ list-style: none;
 }
 
 .product-cart-texts h3{
-    color: lightskyblue;
+    color: black;
+    font-size: 16px;
 }
 
 .product-cart-texts button{
