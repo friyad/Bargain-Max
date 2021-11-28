@@ -199,6 +199,32 @@ font-size: 16px;
 
 
 
+/* Order for Section start here */
+.order-form-div{
+    text-align: center;
+    padding: 10px;
+}
+.order-form-div h1{
+    font-size: 30px;
+    color: rgb(71, 71, 71);
+}
+
+.order-form{
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+
+
+
+
+
+
+
+
+
 /* Footer section start here */
 footer{
     background-color: white;
