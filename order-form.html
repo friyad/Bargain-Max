@@ -53,98 +53,140 @@
 
 
     <!-- Product Order Form start here-------- -->
+
+
     <section class="main-section">
-        <div class="order-form-div">
+
+
+        <div class="form-div">
             <h1>Product Order Form</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
 
-            <form action="" class="order-form">
+                <tbody>
+                    <form action="">
+                        <tr>
+                            <td>
+                                First Name
+                            </td>
+                            <td colspan="2">
+                                <input name="firstName" type="text" placeholder="Your first name" required>
+                            </td>
+                            <td></td>
+                            <td>Last Name</td>
+                            <td colspan="2">
+                                <input name="lastName" type="text" placeholder="Your last name" required>
+                            </td>
+                        </tr>
 
-                <div class="inputs-row">
-                    <div class="input-feilds">
-                        <p>FRIST NAME</p>
-                        <span>: <input name="firstName" type="text" placeholder="Your first name" required></span>
-                    </div>
-                    <div class="input-feilds">
-                        <p>LAST NAME</p>
-                        <span>: <input name="lastName" type="text" placeholder="Your last name" required></span>
-                    </div>
-                </div>
+                        <tr>
+                            <td>
+                                Email Address
+                            </td>
+                            <td colspan="2">
+                                <input name="email" type="email" placeholder="example@mail.com" required>
+                            </td>
+                            <td></td>
+                            <td>Phone Number</td>
+                            <td colspan="2">
+                                <input name="phoneNumber" type="number" placeholder="Your phone number" required>
+                            </td>
+                        </tr>
 
-                <div class="inputs-row">
-                    <div class="input-feilds">
-                        <p>EMAIL ADDRESS</p>
-                        <span>: <input name="email" type="email" placeholder="example@mail.com" required></span>
-                    </div>
-                    <div class="input-feilds">
-                        <p>PHONE NUMBER</p>
-                        <span>: <input name="phoneNumber" type="number" placeholder="Your phone number" required></span>
-                    </div>
-                </div>
+                        <tr>
+                            <td>
+                                Billing Address
+                            </td>
+                            <td colspan="6">
+                                <input name="billingAddress" type="text" placeholder="Your Billing Address" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Your Address
+                            </td>
+                            <td colspan="6">
+                                <input name="address" style="width: 100%;" type="text" placeholder="Your your Address"
+                                    required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                City
+                            </td>
+                            <td colspan="2">
+                                <input name="city" type="text" placeholder="Your city" required>
+                            </td>
+                            <td></td>
+                            <td>State/Province</td>
+                            <td colspan="2">
+                                <input name="stateProvince" type="text" placeholder="Your state or province" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Zip Code
+                            </td>
+                            <td colspan="2">
+                                <input name="zipCode" type="number" placeholder="Your zip code" required>
+                            </td>
+                            <td></td>
+                            <td>Country</td>
+                            <td colspan="2">
+                                <select name="" id="" required style="width: 100%;">
+                                    <option value="">Your Country</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="America">America</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="UK (United Kingdom)">UK (United Kingdom)</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button type="submit">Place Order</button>
+                            </td>
+
+                            <td colspan="2" style="padding-left: 20px; padding-right: 90px;">
+                                <button type="reset" style="border: 2px solid #480CA8; background: none; color: black;">
+                                    <i class="fas fa-undo-alt"></i>
+                                    Reset</button>
+                            </td>
+
+                        </tr>
 
 
 
-                <div class="inputs-row" style="grid-template-columns: repeat(1, 1fr);">
-                    <div class="input-feilds" style="grid-template-columns: repeat(5, 1fr);">
-                        <p>BILLING ADDRESS</p>
-                        <span style="grid-column: span 4;">:
-                            <input name="billingAddress" style="width: 100%;" type="text"
-                                placeholder="Your Billing Address" required></span>
-                    </div>
-                </div>
-
-                <div class="inputs-row" style="grid-template-columns: repeat(1, 1fr);">
-                    <div class="input-feilds" style="grid-template-columns: repeat(5, 1fr);">
-                        <p>Your ADDRESS</p>
-                        <span style="grid-column: span 4;">:
-                            <input name="address" style="width: 100%;" type="text" placeholder="Your your Address"
-                                required></span>
-                    </div>
-                </div>
 
 
-                <div class="inputs-row">
-                    <div class="input-feilds">
-                        <p>CITY</p>
-                        <span>: <input name="city" type="text" placeholder="Your city" required></span>
-                    </div>
-                    <div class="input-feilds">
-                        <p>STATE/PROVINCE</p>
-                        <span>: <input name="stateProvince" type="text" placeholder="Your state or province"
-                                required></span>
-                    </div>
-                </div>
 
-                <div class="inputs-row">
-                    <div class="input-feilds">
-                        <p>ZIP CODE</p>
-                        <span>: <input name="zipCode" type="number" placeholder="Your zip code" required></span>
-                    </div>
-                    <div class="input-feilds">
-                        <p>COUNTRY</p>
-                        <span>:
-                            <select name="" id="" required>
-                                <option value="">Your Country</option>
-                                <option value="Bangladesh">Bangladesh</option>
-                                <option value="Pakistan">Pakistan</option>
-                                <option value="America">America</option>
-                                <option value="Canada">Canada</option>
-                                <option value="UK (United Kingdom)">UK (United Kingdom)</option>
-                            </select>
-                        </span>
-                    </div>
-                </div>
 
-                <div class="inputs-row">
-                    <div class="input-feilds">
-                        <button type="submit">PLACE ORDER</button>
-                        <button type="reset" style="background-color: #fec000; color: black;">
-                            <i class="fas fa-undo-alt"></i>
-                            RESET</button>
-                    </div>
-                </div>
-            </form>
+
+
+
+
+                    </form>
+                </tbody>
+            </table>
         </div>
     </section>
+
+
 
 
 

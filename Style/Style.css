@@ -5,7 +5,13 @@ html, body{
     font-family:Arial, Helvetica, sans-serif ;
     font-size: 14px;
     line-height: 1;
+      box-sizing: border-box;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 
 p {
     line-height: 1.8;
@@ -197,47 +203,32 @@ font-size: 16px;
 
 
 
-/* Order form Section start here */
-.order-form-div{
-    text-align: center;
-    padding: 40px;
+
+/* //--------------------------------------- */
+.form-div{
+padding: 25px;
+text-align: center;
 }
-.order-form-div h1{
+
+.form-div h1{
         margin-bottom: 30px;
     font-size: 30px;
     color: rgb(71, 71, 71);
 }
 
-.inputs-row{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0px 60px;
-    align-items: center;
-    font-size: 18px;
-}
-
-.input-feilds{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-}
-.input-feilds p{
+table{
     text-align: left;
+font-size: 18px;
+    width: 100%;
+      table-layout: fixed;
+      border-spacing: 0px 18px;
 }
 
-.input-feilds span{
-    display: flex;
-    align-items: center;
-}
 
-.input-feilds input, select{
-    padding: 8px;
-    font-size: 18px;
-    outline: none;
-    margin-left: 8px;
-}
 
-.input-feilds button{
-    padding: 10px ;
+table  button{
+    width: 100%;
+    padding: 10px 7px ;
     cursor: pointer;
     background-color: #480CA8;
     color: white;
@@ -246,9 +237,18 @@ grid-template-columns: repeat(2, 1fr);
     border-radius: 5px;
     transition: 0.3s;
     border: none;
-    margin-left: 10px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
+
+table input, select, textarea{
+    width: 100%;
+padding: 8px;
+    font-size: 18px;
+    outline: none;
+    
+}
+
+
 
 
 
@@ -265,3 +265,12 @@ footer{
     margin: auto;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
