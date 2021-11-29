@@ -197,29 +197,58 @@ font-size: 16px;
 
 
 
-
-
-/* Order for Section start here */
+/* Order form Section start here */
 .order-form-div{
     text-align: center;
-    padding: 10px;
+    padding: 40px;
 }
 .order-form-div h1{
+        margin-bottom: 30px;
     font-size: 30px;
     color: rgb(71, 71, 71);
 }
 
-.order-form{
-    margin: 20px 0px;
+.inputs-row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+    grid-gap: 0px 60px;
+    align-items: center;
+    font-size: 18px;
 }
 
+.input-feilds{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+.input-feilds p{
+    text-align: left;
+}
 
+.input-feilds span{
+    display: flex;
+    align-items: center;
+}
 
+.input-feilds input, select{
+    padding: 8px;
+    font-size: 18px;
+    outline: none;
+    margin-left: 8px;
+}
 
-
+.input-feilds button{
+    padding: 10px ;
+    cursor: pointer;
+    background-color: #480CA8;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    margin-left: 10px;
+    margin-top: 25px;
+}
 
 
 
